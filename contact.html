@@ -262,7 +262,8 @@
                                                 <h3>Call Us</h3>
                                                 <p>Make a call for your general
                                                     enquiries.</p>
-                                                <a href="tel:">############</a>
+                                                <a href="tel:+919512042777">+919512042777</a><br>
+                                                <a href="tel:+917874222033">+917874222033</a>
                                             </div>
                                         </div>
                                     </div>
@@ -275,7 +276,8 @@
                                                 <h3>Email Us</h3>
                                                 <p>Send your mail for general
                                                     enquiries.</p>
-                                                <a href="mailto:">#############</a>
+                                                <a href="mailto:info@universityofgeorgia.in">info@universityofgeorgia.in
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -289,7 +291,7 @@
                                             </div>
                                             <div class="text">
                                                 <h3>Office Hrs</h3>
-                                                <p>Mon-Satday: 09.00 to 05.00 (Sunday: Closed)</p>
+                                                <p>Mon-Satday: 09.00 to 08.00 (Sunday: Closed)</p>
                                             </div>
                                         </div>
                                     </div>
@@ -315,7 +317,7 @@
                                         <div class="form-group">
                                             <div class="input-box">
                                                 <input type="text" name="form_name" id="formName"
-                                                    placeholder="Full Name" required="">
+                                                    placeholder="Full Name" required>
                                             </div>
                                         </div>
                                     </div>
@@ -326,7 +328,7 @@
                                         <div class="form-group">
                                             <div class="input-box">
                                                 <input type="email" name="form_email" id="formEmail"
-                                                    placeholder="Email Address" required="">
+                                                    placeholder="Email Address" required>
                                             </div>
                                         </div>
                                     </div>
@@ -337,7 +339,7 @@
                                         <div class="form-group">
                                             <div class="input-box">
                                                 <input type="text" name="form_phone" value="" id="formPhone"
-                                                    placeholder="Phone">
+                                                    placeholder="Phone" required>
                                             </div>
                                         </div>
                                     </div>
@@ -348,7 +350,7 @@
                                         <div class="form-group">
                                             <div class="input-box">
                                                 <input type="text" name="form_subject" value="" id="formSubject"
-                                                    placeholder="Subject">
+                                                    placeholder="Subject" required>
                                             </div>
                                         </div>
                                     </div>
@@ -359,7 +361,7 @@
                                         <div class="form-group">
                                             <div class="input-box">
                                                 <textarea name="form_message" id="formMessage"
-                                                    placeholder="Write a Message" required=""></textarea>
+                                                    placeholder="Write a Message" required></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -371,7 +373,7 @@
                                             <input id="form_botcheck" name="form_botcheck" class="form-control"
                                                 type="hidden" value="">
                                             <button class="btn-one btn-one-style7" type="submit"
-                                                data-loading-text="Please wait...">
+                                                onclick="gotowhatsapp()" data-loading-text="Please wait...">
                                                 <span class="txt">
                                                     Submit Now
                                                 </span>
@@ -388,7 +390,25 @@
             </div>
         </section>
         <!--End Main Contact Form Style8 Area-->
+        <script>
+            function gotowhatsapp() {
 
+                var form_name = document.getElementById("formName").value;
+                var form_email = document.getElementById("formEmail").value;
+                var form_phone = document.getElementById("formPhone").value;
+                var form_subject = document.getElementById("formSubject").value;
+                var formMessage = document.getElementById("formMessage").value;
+
+                var url = "https://wa.me/919512042777?text="
+                    + "Name: " + form_name + "%0a"
+                    + "Email: " + form_email + "%0a"
+                    + "Phone: " + form_phone + "%0a"
+                    + "Subject: " + form_subject + "%0a"
+                    + "Message: " + formMessage;
+
+                window.open(url, '_blank').focus();
+            }
+        </script>
 
         <!--Start Google Map Style10 Area-->
         <section class="google-map-style10-area">
@@ -416,7 +436,7 @@
                     <div class="container">
                         <div class="slogan-style1__inner">
                             <div class="title">
-                                <h2><span>Register!..</span> to study in Next Academic Year 2022.</h2>
+                                <h2><span>Register!..</span> to study in Next Academic Year 2023.</h2>
                             </div>
                             <div class="button-box">
                                 <a class="btn-one" href="contact.html"><span class="txt">Register Now</span></a>
@@ -453,8 +473,10 @@
                                                 <span class="flaticon-phone-call"></span>
                                             </div>
                                             <div class="phone">
-                                                <a href="tel:">############</a>
-                                                <a href="mailto:@email.com">#############</a>
+                                                <a href="tel:+919512042777">+919512042777</a><br>
+                                                <a href="tel:+917874222033">+917874222033</a>
+                                                <a
+                                                    href="mailto:info@universityofgeorgia.in">info@universityofgeorgia.in</a>
                                             </div>
                                         </div>
                                         <div class="footer-social-link">
@@ -555,6 +577,20 @@
                 </div>
             </div>
             <!--End Footer-->
+            <a href="https://wa.me/919512042777?text=Hi%20There!" class="float" style="
+                                              position: fixed;
+                                              width: 30px;
+                                              height: 30px;
+                                              bottom: 30px;
+                                              left: 30px;
+                                              color: #fff;
+                                              border-radius: 50px;
+                                              text-align: center;
+                                              cursor: pointer;
+                                              box-shadow: 2px 2px 3px #999;
+                                            ">
+                <img src="https://trickuweb.com/whatsapp.png" alt="" height="30px" width="30px" />
+            </a>
 
             <div class="footer-bottom-style10">
                 <div class="container">
